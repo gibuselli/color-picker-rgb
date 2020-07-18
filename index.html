@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-range.css">
+    <title>Color Picker</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="slidebox">
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="128"
+            class="slider"
+            id="red-range"
+          />
+        </div>
+
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="128"
+            class="slider"
+            id="green-range"
+          />
+        </div>
+
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="128"
+            class="slider"
+            id="blue-range"
+          />
+        </div>
+        <span class="text">Pick Your Color</span>
+        <div class="rgb">rgb(0,0,0)</div>
+      </div>
+      <div class="color-box"></div>
+    </div>
+
+    
+    <script defer src="./script.js"></script>
+  </body>
+</html>
